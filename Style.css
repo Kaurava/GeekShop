@@ -341,14 +341,14 @@ body {
     filter: brightness(50%);
   }
 
-  .page-header-banner-wrap {
+  .page-header-banner-wrp {
     width: 405px;
     margin: 0 100px 90px 0;
     text-transform: uppercase;
     position: relative;
   }
 
-  .page-header-banner-wrap:before {
+  .page-header-banner-wrp:before {
     content: "";
     display: block;
     width: 12px;
