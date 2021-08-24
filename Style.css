@@ -379,7 +379,37 @@ body {
   .page-header-banner-subtitle-tail{
     color: #F16D7F;
   }
+
+  .breadcrumb{
+    top: 75px;
+    width: 100%;
+    min-height: 148px;
+    position: absolute;
+    background: #F8F3F4;
+    padding-top: 60px;    
+    padding-bottom: 60px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;  
+  }
+
+  .display-selection-title{
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+  }
+
+  .display-selection{  
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+  }  
+
   /* ======= end page-header ======= */
+
+  /* ======= page main ======= */
 
   /* ======= categories ======= */
   .categories {
