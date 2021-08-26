@@ -347,7 +347,11 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #636363;
-  }  
+  }
+  
+  .display-selection-category{
+    color: #F16D7F;    
+  }
   /* ======= end page-header ======= */
 
   /* ======= page main ======= */
@@ -375,6 +379,10 @@ body {
     padding: 13px 16px 16px 16px;
     box-sizing: border-box;
     background: #FFFFFF;
+  }
+
+  .filter-box:enabled {
+    border: 0.5px solid black;
   }
 
   input:focus,
@@ -494,6 +502,7 @@ body {
     font-size: 14px;
     line-height: 16.8px;
   }
+
   .filter-sublist-item:last-child {
     margin: 0 0 24px 0;
   }
@@ -520,42 +529,321 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;  
+    align-items: flex-start;
+    /* border: 2px solid red;   */
   }
 
-  .sort-box-fashion{
-    Width: 132px;
-    height: 17px;    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end; 
+  input:focus,
+  button:focus {
+    outline: none;
   }
 
-  .sort-box-size{
-    Width: 49px;
-    height: 17px;    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end; 
+  input:focus-visible, 
+  button:focus-visible{
+    outline: 2px solid #F16D7F;
   }
 
-  .sort-box-price{
-    Width: 59px;
-    height: 17px;    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end; 
+  /* ======= fashion sort ======= */
+  .list-fashion {
+    width: 146px;
+    border: none;
+    background-color: transparent;
   }
-            
-  .sort-box-title{
+
+  .list-fashion-btn-title {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
     font-weight: 600;
-    line-height: 17px;
+    line-height: 16.8px;
+    color: #6F6E6E;
+    background-color: transparent;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .list-fashion-btn-title svg {
+    fill: #6F6E6E;
+    position: absolute;
+    top: 30%;
+    right: 6%;
+  }
+
+  .list-fashion-btn-title:hover {
+    color: #F16D7F;
+  }
+
+  .list-fashion-btn-title:hover svg {
+    fill: currentColor;
+  }
+
+  .list-fashion-btn-title:active {
+    color: black;
+  }
+
+  .list-fashion-btn-title:active svg {
+    fill: currentColor;
+  }
+
+  #switchfashion {
+    display: none;
+  }
+
+  #switchfashion:checked ~ .list-size-wrp {
+    display: flex;
+  }
+
+  .list-fashion-wrp {
+    display: none;
+    flex-direction: column;
+    margin: 5px 0 0 0;
+    padding: 9.5px 9.5px 9.5px 31px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+
+  .list-fashion-item {
+    display: none;
+  }
+
+  .list-fashion-item:nth-child(1):checked ~ .list-fashion-item-title:nth-child(2):before,
+  .list-fashion-item:nth-child(3):checked ~ .list-fashion-item-title:nth-child(4):before,
+  .list-fashion-item:nth-child(5):checked ~ .list-fashion-item-title:nth-child(6):before,
+  .list-fashion-item:nth-child(7):checked ~ .list-fashion-item-title:nth-child(8):before {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Green_tick.svg/600px-Green_tick.svg.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .list-fashion-item-title {
+    display: block;
+    margin: 0 0 6px 0;
+    position: relative;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16.41px;
     color: #6F6E6E;
   }
-  /* ======= end page main sort ======= */ 
+
+  .list-fashion-item-title:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #EBEBEB;
+    position: absolute;
+    top: 1px;
+    left: -23.5px;
+  }   
+  /* ======= end fashion sort ======= */
+
+  /* ======= size sort ======= */
+  .list-size {
+    width: 54px;
+    border: none;
+    background-color: transparent; 
+  }
+
+  .list-size-btn-title {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-weight: 600;
+    line-height: 16.8px;
+    color: #6F6E6E;
+    background-color: transparent;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .list-size-btn-title svg {
+    fill: #6F6E6E;
+    position: absolute;
+    top: 30%;
+    right: 6%;
+  }
+
+  .list-size-btn-title:hover {
+    color: #F16D7F;
+  }
+
+  .list-size-btn-title:hover svg {
+    fill: currentColor;
+  }
+
+  .list-size-btn-title:active {
+    color: black;
+  }
+
+  .list-size-btn-title:active svg {
+    fill: currentColor;
+  }
+
+  #switch-size {
+    display: none;
+  }
+
+  #switch-size:checked ~ .list-size-wrp {
+    display: flex;
+  }
+
+  .list-size-wrp {
+    display: none;
+    flex-direction: column;
+    margin: 5px 0 0 0;
+    padding: 9.5px 9.5px 9.5px 31px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+
+  .list-size-item {
+    display: none;
+  }
+
+  .list-size-item:nth-child(1):checked ~ .list-size-item-title:nth-child(2):before,
+  .list-size-item:nth-child(3):checked ~ .list-size-item-title:nth-child(4):before,
+  .list-size-item:nth-child(5):checked ~ .list-size-item-title:nth-child(6):before,
+  .list-size-item:nth-child(7):checked ~ .list-size-item-title:nth-child(8):before {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Green_tick.svg/600px-Green_tick.svg.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .list-size-item-title {
+    display: block;
+    margin: 0 0 6px 0;
+    position: relative;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: #6F6E6E;
+  }
+
+  .list-size-item-title:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #EBEBEB;
+    position: absolute;
+    top: 1px;
+    left: -23.5px;
+  }
+  /* ======= end size sort ======= */
+
+  /* ======= price sort ======= */
+  .list-price {
+    width: 66px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .list-price-btn-title {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-weight: 600;
+    line-height: 16.8px;
+    color: #6F6E6E;
+    background-color: transparent;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .list-price-btn-title svg {
+    fill: #6F6E6E;
+    position: absolute;
+    top: 30%;
+    right: 6%;
+  }
+
+  .list-price-btn-title:hover {
+    color: #F16D7F;
+  }
+
+  .list-price-btn-title:hover svg {
+    fill: currentColor;
+  }
+
+  .list-price-btn-title:active {
+    color: black;
+  }
+
+  .list-price-btn-title:active svg {
+    fill: currentColor;
+  }
+
+  #switchprice {
+    display: none;
+  }
+
+  #switchprice:checked ~ .list-size-wrp {
+    display: flex;
+  }
+
+  .list-price-wrp {
+    display: none;
+    flex-direction: column;
+    margin: 5px 0 0 0;
+    padding: 9.5px 9.5px 9.5px 31px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+
+  .list-price-item {
+    display: none;
+  }
+
+  .list-price-item:nth-child(1):checked ~ .list-price-item-title:nth-child(2):before,
+  .list-price-item:nth-child(3):checked ~ .list-price-item-title:nth-child(4):before,
+  .list-price-item:nth-child(5):checked ~ .list-price-item-title:nth-child(6):before,
+  .list-price-item:nth-child(7):checked ~ .list-price-item-title:nth-child(8):before {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Green_tick.svg/600px-Green_tick.svg.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .list-price-item-title {
+    display: block;
+    margin: 0 0 6px 0;
+    position: relative;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: #6F6E6E;
+  }
+
+  .list-price-item-title:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #EBEBEB;
+    position: absolute;
+    top: 1px;
+    left: -23.5px;
+  }  
+  /* ======= end price sort ======= */
+   
+/* ======= end page main sort ======= */ 
  
   /* ======= products ======= */
   .products {

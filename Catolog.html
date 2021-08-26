@@ -113,7 +113,7 @@
           </div>
           <div class="breadcrumb padding-site">
             <span class="display-selection-title">new arrivals</span>
-            <span class="display-selection">home / men / new arrivals</span>
+            <span class="display-selection">home / men / <span class="display-selection-category">new arrivals</span></span>
           </div>    
         </header>
         <main class="main">
@@ -174,34 +174,81 @@
                 </li>
               </ul>
             </div>
-          </div>
 
-              <div class="sort-box">
-                <div class="sort-box-fashion">
-                    <span class="sort-box-title">trending now</span>
-                    <form action="#" class="fashion-btn">          
-                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" fill="#6F6E6E"/>
-                        </svg>
-                    </form>
+            <div class="sort-box">
+              <form class="list-fashion">
+                <input type="checkbox" id="switchfashion">
+                <label class="list-fashion-btn-title" for="switchfashion">
+                  <span>trending now</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" />
+                  </svg>
+                </label>
+                
+                <div class="list-fashion-wrp">
+                  <input class="list-fashion-item" id="select-trendingnow" type="checkbox" value="trending now" name="selectName">
+                  <label class="list-fashion-item-title" for="select-trendingnow">trending now</label>
+                  
+                  <input class="list-fashion-item" id="select-classic" type="checkbox" value="classic" name="selectName">
+                  <label class="list-fashion-item-title" for="select-classic">s</label>
+                  
+                  <input class="list-fashion-item" id="select-sport" type="checkbox" value="sport" name="selectName">
+                  <label class="list-fashion-item-title" for="select-sport">m</label>
+                  
+                  <input class="list-fashion-item" id="select-casualwear" type="checkbox" value="casual wear" name="selectName">
+                  <label class="list-fashion-item-title" for="select-casualwear">l</label>
                 </div>
-                <div class="sort-box-size">
-                    <span class="sort-box-title">size</span>
-                    <form action="#" class="size-btn">          
-                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" fill="#6F6E6E"/>
-                        </svg>
-                    </form>
+              </form>
+
+              <form class="list-size">
+                <input type="checkbox" id="switch-size">
+                <label class="list-size-btn-title" for="switch-size">
+                  <span>size</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" />
+                  </svg>
+                </label>
+                
+                <div class="list-size-wrp">
+                  <input class="list-size-item" id="select-xsmall" type="checkbox" value="xsmall" name="selectName">
+                  <label class="list-size-item-title" for="select-xsmall">xs</label>
+                  
+                  <input class="list-size-item" id="select-small" type="checkbox" value="small" name="selectName">
+                  <label class="list-size-item-title" for="select-small">s</label>
+                  
+                  <input class="list-size-item" id="select-medium" type="checkbox" value="medium" name="selectName">
+                  <label class="list-size-item-title" for="select-medium">m</label>
+                  
+                  <input class="list-size-item" id="select-large" type="checkbox" value="large" name="selectName">
+                  <label class="list-size-item-title" for="select-large">l</label>
                 </div>
-                <div class="sort-box-price">
-                      <span class="sort-box-title">price</span>
-                    <form action="#" class="price-btn">          
-                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" fill="#6F6E6E"/>
-                        </svg>
-                    </form>
+              </form>
+
+              <form class="list-price">
+                <input type="checkbox" id="switchprice">
+                <label class="list-price-btn-title" for="switchprice">
+                  <span>price</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" />
+                  </svg>
+                </label>
+                
+                <div class="list-price-wrp">
+                  <input class="list-price-item" id="select-1000" type="checkbox" value="1000" name="selectName">
+                  <label class="list-price-item-title" for="select-xsmall">below 1000$/label>
+                  
+                  <input class="list-price-item" id="select-10000" type="checkbox" value="10000" name="selectName">
+                  <label class="list-price-item-title" for="select-small">from 1000$ to 10000$</label>
+                  
+                  <input class="list-price-item" id="select-100000" type="checkbox" value="100000" name="selectName">
+                  <label class="list-price-item-title" for="select-medium">from 10000$ to 100000$</label>
+                  
+                  <input class="list-price-item" id="select-lmush" type="checkbox" value="mush" name="selectName">
+                  <label class="list-price-item-title" for="select-large">over 100000$</label>
                 </div>
+              </form>
             </div>
+          </div>
           </section>
 
           <section class="products">
