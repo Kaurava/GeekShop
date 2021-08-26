@@ -363,7 +363,7 @@ body {
   /* ======= page main filter ======= */
   .filter{
     width: 100%;
-    top: 260px;
+    top: 280px;
     min-height: 17px;
     position: absolute;
     display: flex;
