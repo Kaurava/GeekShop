@@ -323,35 +323,48 @@ body {
 }
 /* === end cart-btn === */
 
-  .breadcrumb{
-    width: 100%;
-    min-height: 148px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    background-color: #F1E4E6;
-    background-size: contain;
-    background-position: bottom left;
-    text-transform: uppercase;
-  }
+.breadcrumb{
+  width: 100%;
+  min-height: 148px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #F1E4E6;
+  background-size: contain;
+  background-position: bottom left;
+  text-transform: uppercase;
+}
 
-  .display-selection-title{
-    font-size: 24px;
-    line-height: 29px;
-    color: #F16D7F;
-  }
+.display-selection-title{
+  font-weight: 300;
+  color: #F16D7F;
+}
 
-  .display-selection{  
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #636363;
-  }
-  
-  .display-selection-category{
-    color: #F16D7F;    
-  }
+ul.display-selection{  
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  list-style: none;
+  color: black;
+}
+
+ul.display-selection li {
+  display: inline;
+}
+
+ul.display-selection li+li:before {
+  color: black;
+  content: "/\00a0";
+}
+
+ul.display-selection li a {
+  text-decoration: none;
+}
+
+.display-selection-category{
+  color: #F16D7F;    
+}
   /* ======= end page-header ======= */
 
   /* ======= page main ======= */
