@@ -1010,103 +1010,6 @@ body {
   }
   /* ======= end products ======= */
 
-  /* ======= pagination ======= */
-  .pagination{
-    width: 100%;
-    height: 44px;
-    margin-top: 18px;
-    display: flex;
-    justify-content: center;
-    /* border: 2px solid green; */
-  }
-
-  .ol {
-    color: #000000;
-    text-decoration: none;
-    width: 284px;
-    height: 44px;
-    display: flex;
-    justify-content: space-between; 
-    list-style: none;
-  }
-
-  ol#pag li {
-    display:inline;
-  }
-
-  ol#pag li a {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-
-  ol#pag li a.active {
-    color: red;
-  }
-  
-  .pag a:hover:not(.active) {
-    background-color: #cccccc;
-  }
-  /* ======= end pagination ======= */
-
-  /* ======= features ======= */
-.features {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1600px;
-    min-height: 341px;
-    padding: 20px;
-    margin: 96px auto 0 auto;
-    background-color: #222224;
-    box-sizing: border-box;
-  }
-
-  .features-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 300px;
-    margin: 0 90px 0 0;
-  }
-
-  .features-item:nth-child(4n-1) {
-    margin: 0;
-  }
-
-  .features-item-icon {
-    display: block;
-    margin: 0 0 28px 0;
-    fill: #F16D7F;
-  }
-
-  .features-item-title {
-    display: block;
-    width: 100%;
-    margin: 0 0 16px 0;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19.96px;
-    line-height: 23.95px;
-    color: #FBFBFB;
-    text-align: center;
-  }
-
-  .features-item-txt {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 13.972px;
-    line-height: 16.77px;
-    text-align: center;
-    color: #FBFBFB;
-  }
-  /* ======= end features ======= */
-
   /* ======= subscribe ======= */
 .subscribe {
     display: flex;
@@ -1118,7 +1021,7 @@ body {
     max-width: 1600px;
     min-height: 448px;
     padding: 20px;
-    margin: 0 auto;
+    margin: 98px auto 0 auto;
     box-sizing: border-box;
     background-image: linear-gradient(rgba(244,244,244, 0.7), rgba(244,244,244, 0.7)), 
                       url('https://i.postimg.cc/tJVR1VWX/Layer-41.png');
