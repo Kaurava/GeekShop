@@ -1059,7 +1059,7 @@ body {
     color: red;
   }
   
-  .pag a:hover:not(.active) {
+  .pagination-list li a:hover:not(.active) {
     background-color: #cccccc;
   }
   /* ======= end pagination ======= */
