@@ -382,7 +382,7 @@ ul.display-selection li a {
     align-items: flex-start;
     box-sizing: border-box;
     padding: 86px 0;
-    border: 2px solid green;
+    /* border: 2px solid green; */
   }
 
   .order-products{
@@ -391,7 +391,7 @@ ul.display-selection li a {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      border: 3px solid red;
+      /* border: 3px solid red; */
   }
 
   .order-products-item-wrp{
@@ -489,6 +489,7 @@ ul.display-selection li a {
     line-height: 16.8px;
     text-transform: uppercase;  
     border: 1px solid #A4A4A4;
+    color: #000000;
   }
 
   .order-products-button:hover {
@@ -508,26 +509,121 @@ ul.display-selection li a {
     height: 544px;
     margin-left: 128px;
     display: flex;
-    orientation: column;
-    justify-content: flex-start;
-    border: 3px solid blue;
+    flex-direction: column;    
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
   }
 
   .order-info-adress{
     width: 360px;
     height: 272px;
     display: flex;
-    orientation: column;
-    border: 3px solid red;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-.order-info-cost{
+  .order-info-adress-title{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    text-transform: uppercase; 
+  }
+
+  .order-info-adress-text{
+    width: 360px;
+    height: 45px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #222222; 
+    border: 1px solid #A4A4A4;    
+  }
+
+  .order-info-adress-button{
+    width: 102px;
+    height: 35px;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A; 
+    box-sizing: border-box;
+    text-transform: uppercase;
+    border: 1px solid #A4A4A4; 
+  }
+
+  .order-info-adress-button:hover {
+    background-color: #ccc;
+    color: #000;
+    border: 1px solid #000;
+  }
+
+  .order-info-adress-button:active {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+
+  .order-info-cost{
     width: 360px;
     height: 214px;
-    display: flex;
-    orientation: column;
-    border: 3px solid red;
-}
+    background: #F5F3F3;
+    /* border: 3px solid red; */
+  }
+
+  .order-info-cost-subtotal{
+    width: 108px;
+    height: 13px;
+    position: relative;
+    top: 38px;
+    left: 258px;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;   
+    color: #4A4A4A;
+  }
+
+  .order-info-cost-grandtotal{
+    width: 170px;
+    height: 19px;
+    position: relative;
+    top: 64px;
+    left: 143px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222; 
+  }
+
+  .order-info-cost-grandtotal-value{
+    color: #F16D7F;
+  }
+
+  .order-info-cost-checkout-line{
+    width: 275px;
+    height: 1px;
+    position: relative;
+    top: 104px;
+    left: 43px;
+    fill: E2E2E2;
+  }
+
+  .order-info-cost-checkout-button{
+    width: 273px;
+    height: 50px;
+    position: relative;
+    top: 122px;
+    left: 43px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #F16D7F;
+    text-transform: uppercase;
+  }
   /* ======= end order ======= */
 
   /* ======= subscribe ======= */
