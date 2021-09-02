@@ -370,7 +370,7 @@ ul.display-selection li a {
   /* ======= page main ======= */
    .main{
     padding-top: 132px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
 
   /* ======= image slider ======= */  
@@ -1150,7 +1150,8 @@ ul.display-selection li a {
     color: #fff;
   }
   /* ======= end subscribe ======= */
-  
+  /* ======= end main ======= */
+    
   /* ======= page-footer ======= */
 .page-footer {
   display: flex;
