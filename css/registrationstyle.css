@@ -116,7 +116,7 @@ body {
 
 /* === mobile menu === */
 /* .menu {
-  
+
 } */
 
 .menu-btn {
@@ -309,9 +309,34 @@ body {
 /* === end account-btn === */
 
 /* === cart-btn === */
-.cart-btn svg {
+.cart-btn {
+  display: block;
+  background: transparent;
+  border: none;
+  position: relative;
+}
+
+.cart-btn svg{
   width: 32px;
   height: 29px;
+  fill: #E8E8E8;
+}
+
+.cart-btn span{
+  display: block;
+  width: 19px;
+  height: 19px;
+  background: #F16D7F;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 14px; 
+  color: #FFFFFF;
+  position: absolute;
+  top: -7px;
+  left: 22px;
 }
 
 .cart-btn:hover svg {
