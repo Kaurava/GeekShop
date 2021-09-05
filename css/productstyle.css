@@ -401,8 +401,8 @@ ul.display-selection li a {
   }
 
   .prev{
-    width: 47;
-    max-height: 47;
+    width: 47px;
+    height: 47px;
     background: rgba(42, 42, 42, 0.15);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25); 
     box-sizing: border-box;
@@ -410,20 +410,20 @@ ul.display-selection li a {
   }
 
   .next{
-    width: 47;
-    height: 47;
+    width: 47px;
+    height: 47px;
     background: rgba(42, 42, 42, 0.15);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25); 
     box-sizing: border-box;
     visibility: hidden;
   }
 
-  .prev:active path{
-    fill: "#F16D7F";
+  .prev:active{
+    fill: #F16D7F;
   }
 
   .next:active{
-    fill: "#F16D7F";
+    fill: #F16D7F;
   }
   /* ======= end image slider ======= */  
 
@@ -441,7 +441,7 @@ ul.display-selection li a {
     justify-content:space-around;
     align-items: center;
     width: 100%;
-    min-height: 470;
+    min-height: 470px;
     margin: 65px 0;
   } 
 
@@ -464,7 +464,7 @@ ul.display-selection li a {
   
   .product-content{
     width: 555px;
-    height: 51,43px;
+    height: 51.43px;
     margin-bottom: 32px;
     font-weight: 300;
     line-height: 17px;
@@ -513,7 +513,8 @@ ul.display-selection li a {
     width: 132px;
     height: 17.14px;
     border: none;
-    background-color: transparent; 
+    background-color: transparent;
+    z-index: 25; 
   }
 
   .list-color-btn-title {
@@ -619,6 +620,7 @@ ul.display-selection li a {
     height: 17.14px;
     border: none;
     background-color: transparent; 
+    z-index: 25; 
   }
 
   .list-size-btn-title {
@@ -724,6 +726,7 @@ ul.display-selection li a {
     height: 17.14px;
     border: none;
     background-color: transparent; 
+    z-index: 25; 
   }
 
   .list-count-btn-title {
@@ -869,7 +872,7 @@ ul.display-selection li a {
     margin: 63px auto 0 auto;
   }
 
-  .products-item {
+  .products-item-wrp {
     display: block;
     width: 360px;
     margin: 0 30px 30px 0;
@@ -879,39 +882,39 @@ ul.display-selection li a {
     box-sizing: border-box;
   }
 
-  .products-item:nth-child(3n) {
+  .products-item-wrp:nth-child(3n) {
     margin: 0 0 30px 0;
   }
 
-  .products-item:hover .products-item-btn {
+  .products-item-wrp:hover .products-item-btn {
     display: flex
   }
 
-  .products-item:hover .products-item-btn:hover {
+  .products-item-wrp:hover .products-item-btn:hover {
     background-color: #ccc;
     color: #000;
     border: 1px solid #000;
   }
 
-  .products-item:hover .products-item-btn:hover svg {
+  .products-item-wrp:hover .products-item-btn:hover svg {
     fill: #000;
   }
 
-  .products-item:hover .products-item-btn:active {
+  .products-item-wrp:hover .products-item-btn:active {
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
   }
 
-  .products-item:hover .products-item-btn:active svg {
+  .products-item-wrp:hover .products-item-btn:active svg {
     fill: #fff;
   }
 
-  .products-item:hover .products-item-photo {
+  .products-item-wrp:hover .products-item-photo {
     filter: brightness(50%);
   }
 
-  .products-item:hover .products-item-photo-wrp:before {
+  .products-item-wrp:hover .products-item-photo-wrp:before {
     content: "";
     display: block;
     width: 100%;

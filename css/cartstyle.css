@@ -451,7 +451,7 @@ ul.display-selection li a {
   .order-products-item-title{
     font-weight: 400;
     font-size: 24px;
-    line-height: 28,8px;
+    line-height: 28.8px;
     text-transform: uppercase;      
   }
 
@@ -608,7 +608,7 @@ ul.display-selection li a {
     position: relative;
     top: 104px;
     left: 43px;
-    fill: E2E2E2;
+    fill: #E2E2E2;
   }
 
   .order-info-cost-checkout-button{
