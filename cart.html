@@ -134,7 +134,7 @@
                             <span class="order-products-item-price txt">Price: <span class="order-products-item-price-dollars">$300</span></span>
                             <span class="order-products-item-color txt">Color: Red</span>
                             <span class="order-products-item-size txt">Size: Xl</span>
-                            <span class="order-products-item-count txt">Quantity:	<span class="order-products-item-count-value">2</span></span>
+                            <span class="order-products-item-count">Quantity:	 <input class="order-products-item-count-value" type="number" step="1" min="0" max="100" value="2"/></span>
                           </div>
                         </div>
                         <div class="order-products-item-txt-cross">
@@ -155,7 +155,7 @@
                             <span class="order-products-item-price">Price: <span class="order-products-item-price-dollars">$300</span></span>
                             <span class="order-products-item-color">Color: Red</span>
                             <span class="order-products-item-size">Size: Xl</span>
-                            <span class="order-products-item-count">Quantity:	<span class="order-products-item-count-value">2</span></span>
+                            <span class="order-products-item-count">Quantity:	 <input class="order-products-item-count-value" type="number" step="1" min="0" max="100" value="2"/></span>
                           </div>
                         </div>
                         <div class="order-products-item-txt-cross">
@@ -172,13 +172,13 @@
                   </div>
                 </div>
                 <div class="order-info">
-                  <div class="order-info-adress">
+                  <form class="order-info-adress">
                     <h4 class="order-info-adress-title">Shipping adress</h4>
-                    <input class="order-info-adress-text" type="text" value="Country">
-                    <input class="order-info-adress-text" type="text" value="State">
-                    <input class="order-info-adress-text" type="text" value="Postcode / Zip">
-                    <button class="order-info-adress-button">Get a quote</button>
-                  </div>
+                    <p><input class="order-info-adress-text" type="text" placeholder="Country"/></p>
+                    <p><input class="order-info-adress-text" type="text" placeholder="State"/></p>
+                    <p><input class="order-info-adress-text" type="text" placeholder="Postcode / Zip"></p>
+                    <p><input class="order-info-adress-button" type="submit" value="Get a quote"></p>
+                  </form>
                   <div class="order-info-cost">
                     <span class="order-info-cost-subtotal">Sub total   $900</span>
                     <span class="order-info-cost-grandtotal">Grand total   <span class="order-info-cost-grandtotal-value">$900</span></span>
